@@ -1,0 +1,114 @@
+// // Zed keymap
+// //
+// // For information on binding keys, see the Zed
+// // documentation: https://zed.dev/docs/key-bindings
+// //
+// // To see the default key bindings run `zed: open default keymap`
+// // from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-₹": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-i": "assistant::InlineAssist"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-i": "assistant::InlineAssist"
+    }
+  },
+  {
+    "context": "!ContextEditor > (Editor && mode == full)",
+    "bindings": {
+      "cmd-i": "assistant::InlineAssist"
+    }
+  },
+
+  {
+    "context": "",
+    "bindings": {
+      "ctrl-cmd-i": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "",
+    "bindings": {
+      "cmd-b": "workspace::ToggleRightDock"
+    }
+  }
+]
+
+// [
+//   {
+//     "context": "Workspace",
+//     "bindings": {
+//       "cmd+s cmd+d": "workbench.action.files.saveWithoutFormatting",
+//       "cmd+k s": "-workbench.action.files.saveWithoutFormatting",
+//       "cmd+s": "workbench.action.files.save",
+//       "-cmd+s": "workbench.action.files.save",
+//       "cmd+1": "workbench.action.openEditorAtIndex1",
+//       "ctrl+1": "-workbench.action.openEditorAtIndex1",
+//       "cmd+2": "workbench.action.openEditorAtIndex2",
+//       "ctrl+2": "-workbench.action.openEditorAtIndex2",
+//       "cmd+3": "workbench.action.openEditorAtIndex3",
+//       "ctrl+3": "-workbench.action.openEditorAtIndex3",
+//       "cmd+4": "workbench.action.openEditorAtIndex4",
+//       "ctrl+4": "-workbench.action.openEditorAtIndex4",
+//       "cmd+5": "workbench.action.openEditorAtIndex5",
+//       "ctrl+5": "-workbench.action.openEditorAtIndex5",
+//       "cmd+6": "workbench.action.openEditorAtIndex6",
+//       "ctrl+6": "-workbench.action.openEditorAtIndex6",
+//       "cmd+7": "workbench.action.openEditorAtIndex7",
+//       "ctrl+7": "-workbench.action.openEditorAtIndex7",
+//       "cmd+8": "workbench.action.openEditorAtIndex8",
+//       "ctrl+8": "-workbench.action.openEditorAtIndex8",
+//       "cmd+9": "workbench.action.openEditorAtIndex9",
+//       "ctrl+9": "-workbench.action.openEditorAtIndex9",
+//       "ctrl+shift+[Backquote]": "workbench.action.terminal.new",
+//       "-ctrl+shift+[Backquote]": "workbench.action.terminal.new",
+//       "ctrl+[Backquote]": "workbench.action.togglePanel",
+//     }
+//   },
+//   {
+//     "context": "Workspace",
+//     "bindings": {
+//       "ctrl+1": "workbench.action.focusFirstEditorGroup",
+//       "-cmd+1": "workbench.action.focusFirstEditorGroup",
+//       "ctrl+2": "workbench.action.focusSecondEditorGroup",
+//       "-cmd+2": "workbench.action.focusSecondEditorGroup",
+//       "ctrl+3": "workbench.action.focusThirdEditorGroup",
+//       "-cmd+3": "workbench.action.focusThirdEditorGroup",
+//       "ctrl+4": "workbench.action.focusFourthEditorGroup",
+//       "-cmd+4": "workbench.action.focusFourthEditorGroup",
+//       "ctrl+5": "workbench.action.focusFifthEditorGroup",
+//       "-cmd+5": "workbench.action.focusFifthEditorGroup",
+//       "ctrl+6": "workbench.action.focusSixthEditorGroup",
+//       "-cmd+6": "workbench.action.focusSixthEditorGroup",
+//       "ctrl+7": "workbench.action.focusSeventhEditorGroup",
+//       "-cmd+7": "workbench.action.focusSeventhEditorGroup",
+//       "ctrl+8": "workbench.action.focusEighthEditorGroup",
+//       "-cmd+8": "workbench.action.focusEighthEditorGroup"
+//     }
+//   }
+// ]
+
+// // Place your key bindings in this file to override the defaults

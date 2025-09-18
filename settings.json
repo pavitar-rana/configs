@@ -1,0 +1,113 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+      "enterprise_uri": null
+    },
+    "enabled_in_text_threads": false
+  },
+  "show_edit_predictions": false,
+  "agent": {
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "dock": "left"
+  },
+  "completions": null,
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Material Icon Theme"
+  },
+
+  // "ui_font_family": "JetBrains Mono",
+  // "buffer_font_family": "JetBrains Mono",
+  "ui_font_family": "MonoLisa",
+  "buffer_font_family": "MonoLisa",
+  // "ui_font_family": "Source Code Pro",
+  // "buffer_font_family": "Source Code Pro",
+
+  "project_panel": {
+    "show_diagnostics": "off",
+    "auto_fold_dirs": false,
+    "git_status": false,
+    "dock": "right"
+  },
+  "outline_panel": {
+    "git_status": false
+  },
+  "inlay_hints": {
+    "enabled": false
+  },
+  "file_types": {
+    "php": [".php_cs", ".php_cs.dist"]
+  },
+  "linked_edits": true,
+  "ensure_final_newline_on_save": true,
+  "indent_guides": {
+    "enabled": false,
+    "line_width": 0,
+    "active_line_width": 0,
+    "coloring": "fixed",
+    "background_coloring": "disabled"
+  },
+  "wrap_guides": [],
+  "preferred_line_length": 120,
+  "soft_wrap": "prefer_line",
+  "base_keymap": "VSCode",
+  "terminal": {
+    "line_height": {
+      "custom": 1.5
+    },
+    "font_size": 16,
+    "cursor_shape": "bar",
+    "font_family": "MonoLisa"
+  },
+  "search": {
+    "button": false,
+    "whole_word": false,
+    "case_sensitive": false,
+    "include_ignored": false,
+    "regex": false
+  },
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "minimap": {
+    "show": "never",
+    "max_width_columns": 250
+  },
+  "hover_popover_delay": 1000,
+  "hover_popover_enabled": true,
+  "selection_highlight": false,
+  "cursor_blink": false,
+  "tabs": {
+    "git_status": false
+  },
+  "preview_tabs": {
+    "enable_preview_from_file_finder": false,
+    "enabled": false
+  },
+  "ui_font_size": 17,
+  "buffer_font_size": 17.0,
+  "theme": {
+    "mode": "system",
+    "light": "Gruvbox Light",
+    "dark": "Vesper"
+  },
+  "hide_mouse": "on_typing_and_movement"
+}
