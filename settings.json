@@ -179,6 +179,8 @@
       "editor.gutter.background": "#000",
       "tab_bar.background": "#000",
       "background": "#000",
+      "border": "#060606",
+      "border.selected": "#000",
       "tab.inactive_background": "#000"
     }
   },
