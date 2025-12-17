@@ -7,8 +7,36 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "helix_mode": false,
+  "ssh_connections": [
+    {
+      "host": "firetry.asia-southeast1-b.x-474517",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/home/pavitar/firecracker-ts-sdk"]
+        },
+        {
+          "paths": ["/home/pavitar/firecracker-ts-sdk-working"]
+        }
+      ]
+    },
+    {
+      "host": "lovable.asia-southeast1-b.lovable-e2b-me",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/home/pavitar/firecracker-ts-sdk-working"]
+        }
+      ]
+    }
+  ],
+  "vim_mode": true,
   "edit_predictions": {
-    "mode": "subtle",
+    "mode": "eager",
     "copilot": {
       "proxy": null,
       "proxy_no_verify": null,
@@ -16,16 +44,44 @@
     },
     "enabled_in_text_threads": false
   },
-  "show_edit_predictions": false,
+  "show_edit_predictions": true,
   "agent": {
+    "always_allow_tool_actions": true,
+    "profiles": {
+      "write": {
+        "name": "Write",
+        "tools": {
+          "copy_path": true,
+          "create_directory": true,
+          "delete_path": true,
+          "diagnostics": true,
+          "edit_file": true,
+          "fetch": true,
+          "list_directory": true,
+          "project_notifications": true,
+          "move_path": true,
+          "now": true,
+          "find_path": true,
+          "read_file": true,
+          "grep": true,
+          "terminal": true,
+          "thinking": true,
+          "web_search": true,
+          "open": true
+        },
+        "enable_all_context_servers": true,
+        "context_servers": {}
+      }
+    },
+    "single_file_review": false,
     "inline_assistant_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "model": "claude-sonnet-4.5"
     },
-    "default_profile": "ask",
+    "default_profile": "write",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "provider": "google",
+      "model": "gemini-3-pro-preview"
     },
     "dock": "left"
   },
@@ -75,8 +131,8 @@
     "line_height": {
       "custom": 1.5
     },
-    "font_size": 16,
-    "cursor_shape": "bar",
+    "font_size": 15,
+    "cursor_shape": "block",
     "font_family": "MonoLisa"
   },
   "search": {
@@ -102,12 +158,46 @@
     "enable_preview_from_file_finder": false,
     "enabled": false
   },
-  "ui_font_size": 17,
-  "buffer_font_size": 17.0,
+  "ui_font_size": 15,
+  "buffer_font_size": 15,
   "theme": {
     "mode": "system",
     "light": "Gruvbox Light",
     "dark": "Vesper"
   },
-  "hide_mouse": "on_typing_and_movement"
+
+  "theme_overrides": {
+    "Vesper": {
+      "editor.background": "#000000",
+      "panel.background": "#000",
+      "terminal.background": "#000",
+      "title_bar.background": "#000",
+      "status_bar.background": "#000",
+      "scrollbar.track.background": "#00000000",
+      "toolbar.background": "#000",
+      "tab.active_background": "#0F0F0F",
+      "editor.gutter.background": "#000",
+      "tab_bar.background": "#000",
+      "background": "#000",
+      "tab.inactive_background": "#000"
+    }
+  },
+  "hide_mouse": "on_typing_and_movement",
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/node_modules/**"
+  ]
+  // "languages": {
+  //   "Python": {
+  //     "language_servers": ["pyright, ruff"]
+  //   }
+  // }
 }
