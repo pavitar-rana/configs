@@ -54,6 +54,18 @@
     "bindings": {
       "cmd-b": "workspace::ToggleRightDock"
     }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "enter": "project_panel::Rename"
+    }
+  },
+  {
+    "context": "((vim_mode == helix_normal || vim_mode == helix_select) && !menu)",
+    "bindings": {
+      "t t": "vim::StartOfLine"
+    }
   }
 ]
 
